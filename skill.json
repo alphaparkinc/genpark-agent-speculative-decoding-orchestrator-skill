@@ -1,0 +1,36 @@
+{
+  "name": "genpark-agent-speculative-decoding-orchestrator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Speculative decoding draft-model verification engine calculating acceptance probabilities, rejection boundaries, and token throughput speedups.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "inference-optimization",
+  "tags": [
+    "speculative-decoding",
+    "draft-model",
+    "throughput-speedup",
+    "vllm-inference",
+    "latency-optimization"
+  ],
+  "inputs": {
+    "prompt": {
+      "type": "string"
+    },
+    "draft_tokens": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "orchestration_id": {
+      "type": "string"
+    },
+    "tokens_accepted_count": {
+      "type": "integer"
+    },
+    "effective_throughput_speedup": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
